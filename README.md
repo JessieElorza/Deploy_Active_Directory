@@ -36,3 +36,12 @@ This repository contains instructions and configurations for deploying an on-pre
 
 **1. Create a Domain Admin User**
 ---
+
+I began by opening a Remote Desktop session to the **dc-1** VM using the original admin user created in Azure, but with domain credentials `mydomain.com\<yourcreatedcredentials>` and password. Once logged into the VM, I ran **Active Directory Users and Computers (ADUC)** as an administrator.
+
+<p>
+
+</p>
+<p>
+
+</p>
