@@ -258,6 +258,9 @@ Logged out of DC-1 and logged back in using the domain credentials `mydomain.com
 
 <h2></h2>
 
+**2. Join client-1 to the Domain**
+---
+
 <p>
 <img width="301" height="488" alt="Screenshot 2026-07-25 095352" src="https://github.com/user-attachments/assets/38780a1d-d027-4281-b420-86b162a352c6" />
 </p>
@@ -306,6 +309,38 @@ Under the **Computer Name** tab, I clicked **Change** to modify the computer’s
 </p>
 <p>
 After entering valid domain credentials, the computer was successfully joined to the domain and required a restart to apply the changes. Joining the computer to the domain allows centralized management of users, security policies, and resources through Active Directory, making administration more efficient and scalable.
+</p>
+<br />
+
+<h2></h2>
+
+### Verify in Active Directory
+
+<p>
+<img width="577" height="588" alt="Screenshot 2026-07-25 100519" src="https://github.com/user-attachments/assets/07cdb8a2-fbad-42be-b5da-c3a8e61cf11a" />
+</p>
+<p>
+I went back to the Domain Controller VM (dc-1), opened **Active Directory Users and Computers**.
+</p>
+<br />
+
+<h2></h2>
+
+<p>
+<img width="561" height="395" alt="Screenshot 2026-07-25 100641" src="https://github.com/user-attachments/assets/f0f4fc8b-77ab-4dfb-8e6c-01c267060508" />
+</p>
+<p>
+Verify that (client-1) appears in the Computers folder under the domain (mydomain.com), confirm it was successfully added to the domain.
+</p>
+<br />
+
+<h2></h2>
+
+<p>
+<img width="561" height="392" alt="Screenshot 2026-07-25 100810" src="https://github.com/user-attachments/assets/ef20b928-fd61-4888-bc66-5d97ac44efd0" />
+</p>
+<p>
+Separate administrators, employees, and client systems into distinct containers for improved organization and management, Create a new Organizational Unit named "_CLIENTS" and move client-1 into it.
 </p>
 <br />
 
