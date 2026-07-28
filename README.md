@@ -218,9 +218,53 @@ Verify that Jane Admin is in the designated group, the _ADMINS (OU).
 <img width="561" height="395" alt="Screenshot 2026-07-25 094315" src="https://github.com/user-attachments/assets/138e8a76-d641-4801-aeeb-24ab1bc13da1" />
 </p>
 <p>
-Right-clicking **Jane Doe** (administrative account), in the user’s **Properties**, under the **Member Of** tab, I selected **Add**, entered "Domain Admins", and clicked **Check Names** to validate the group. After confirming, I clicked **OK** to add the user to the Domain Admins group, granting administrative privileges.
+Right-click **Jane Doe** (administrative account), select the user’s **Properties**. 
+</p>
+<br />
+
+<h2></h2>
+
+<p>
+<img width="562" height="446" alt="Screenshot 2026-07-25 094422" src="https://github.com/user-attachments/assets/d93cc024-3963-47c9-b68e-12710f467654" />
+</p>
+<p>
+Under the **Member Of** tab, I selected **Add**, entered "Domain Admins", and clicked **Check Names** to validate the group. After confirming, I clicked **OK** to add the user to the Domain Admins group, granting administrative privileges.
 Adding the user to the Domain Admins group provides full administrative control over the domain, following the practice of using dedicated admin accounts instead of default ones.
 </p>
 <br />
 
+<h2></h2>
+
+<p>
+<img width="333" height="196" alt="Screenshot 2026-07-25 094800" src="https://github.com/user-attachments/assets/35e3b443-747f-43b6-94cb-fab5736ee5bb" />
+</p>
+<p>
+<img width="330" height="628" alt="Screenshot 2026-07-25 095055" src="https://github.com/user-attachments/assets/f6d7acab-ab9a-465b-933d-f59924518baf" />
+</p>
+<p>
+Logged out of DC-1 and logged back in using the domain credentials `mydomain.com\jane_admin` as the username and password. For the remaining steps, we will keep **Remote Desktop** open to use **jane_admin** as the admin account for the rest of the lab.
+</p>
+<br />
+
+<h2></h2>
+
+<p>
+<img width="301" height="488" alt="Screenshot 2026-07-25 095352" src="https://github.com/user-attachments/assets/38780a1d-d027-4281-b420-86b162a352c6" />
+</p>
+<p>
+Navigated to the Azure Virtual Machines list and selected the client-1 VM. Initiated a Remote Desktop connection using the public IP address (172.200.210.160), authenticating with domain credentials in the format `mydomain.com\<yourcreatedcredentials>` and the associated password.
+</p>
+<br />
+
+<h2></h2>
+
+<p>
+<img width="301" height="488" alt="Screenshot 2026-07-25 095352" src="https://github.com/user-attachments/assets/38780a1d-d027-4281-b420-86b162a352c6" />
+</p>
+<p>
+Navigated to the Azure Virtual Machines list and selected the client-1 VM. Initiated a Remote Desktop connection using the public IP address (172.200.210.160), authenticating with domain credentials in the format `mydomain.com\<yourcreatedcredentials>` and the associated password.
+</p>
+<br />
+
+<h2></h2>
 <h2></h2>
