@@ -259,12 +259,44 @@ Navigated to the Azure Virtual Machines list and selected the client-1 VM. Initi
 <h2></h2>
 
 <p>
-<img width="301" height="488" alt="Screenshot 2026-07-25 095352" src="https://github.com/user-attachments/assets/38780a1d-d027-4281-b420-86b162a352c6" />
+<img width="152" height="453" alt="Screenshot 2026-07-25 095652" src="https://github.com/user-attachments/assets/8bd067c3-7d7b-41b5-ad21-323c6cfe94fe" />
 </p>
 <p>
-Navigated to the Azure Virtual Machines list and selected the client-1 VM. Initiated a Remote Desktop connection using the public IP address (172.200.210.160), authenticating with domain credentials in the format `mydomain.com\<yourcreatedcredentials>` and the associated password.
+Once logged in to **client-1**, I right-clicked the Start menu and opened **System** to access the computer’s settings and configuration details.
 </p>
 <br />
 
 <h2></h2>
+
+<p>
+<img width="1123" height="433" alt="Screenshot 2026-07-25 095750" src="https://github.com/user-attachments/assets/57c59af5-87fa-4eda-834c-45261f40c138" />
+</p>
+<p>
+On the right-hand side, I navigated to **Rename this PC (advanced) > Change**, which opened the **System Properties** window.
+</p>
+<br />
+
+<h2></h2>
+
+<p>
+<img width="689" height="477" alt="Screenshot 2026-07-25 095947" src="https://github.com/user-attachments/assets/5a32cddc-07bb-4bf8-854f-9b89ab6c5b8c" />
+</p>
+<p>
+Under the **Computer Name** tab, I clicked **Change** to modify the computer’s domain membership. Next, I selected the **Domain** option, entered **"mydomain.com"**, and clicked **OK** to join **client-1** to the domain.
+</p>
+<br />
+
+<h2></h2>
+
+<p>
+<img width="652" height="439" alt="Screenshot 2026-07-25 100128" src="https://github.com/user-attachments/assets/297c9ff5-38f1-4837-8624-2c9bf324bffc" />
+</p>
+<p>
+<img width="264" height="143" alt="Screenshot 2026-07-25 100157" src="https://github.com/user-attachments/assets/a87c7b5e-f5b4-4134-ba2a-11d20ce0ed29" />
+</p>
+<p>
+After entering valid domain credentials, the computer was successfully joined to the domain and required a restart to apply the changes. Joining the computer to the domain allows centralized management of users, security policies, and resources through Active Directory, making administration more efficient and scalable.
+</p>
+<br />
+
 <h2></h2>
