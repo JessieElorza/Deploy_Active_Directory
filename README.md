@@ -52,7 +52,17 @@ To install Active Directory on the domain controller, I returned to the **dc-1**
 <img width="952" height="510" alt="Screenshot 2026-07-25 091415" src="https://github.com/user-attachments/assets/6788fe48-c83e-40ba-80ca-55a9c3183faf" />
 </p>
 <p>
-Proceed by selecting option 2, **Add roles and features**, then select **Next** until you reach **Server Roles**. In Server roles, select **Active Directory Domain Services (AD DS)** under **Server Roles**. Upon selection, I was prompted to add the required features, including Group Policy Management and Remote Server Administration Tools. I clicked **Add Features** and ensured that management tools were included to enable full administrative functionality.
+Proceed by selecting option 2, **Add roles and features**. Select **Next** until you reach **Server Roles**. In Server roles, select **Active Directory Domain Services (AD DS)** under **Server Roles**. Upon selection, I was prompted to add the required features, including Group Policy Management and Remote Server Administration Tools. I clicked **Add Features** and ensured that management tools were included to enable full administrative functionality.
+</p>
+<br />
+
+<h2></h2>
+
+<p>
+<img width="587" height="415" alt="Screenshot 2026-07-25 091438" src="https://github.com/user-attachments/assets/be99694d-9187-44fb-b1c1-755322ca335d" />
+</p>
+<p>
+Select **Next** until you reach **Server Roles**. In Server roles, select **Active Directory Domain Services (AD DS)** under **Server Roles**. Upon selection, I was prompted to add the required features, including Group Policy Management and Remote Server Administration Tools. Click **Add Features** and ensure that management tools were included to enable full administrative functionality.
 </p>
 <br />
 
