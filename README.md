@@ -340,7 +340,27 @@ Verify that (client-1) appears in the Computers folder under the domain (mydomai
 <img width="561" height="392" alt="Screenshot 2026-07-25 100810" src="https://github.com/user-attachments/assets/ef20b928-fd61-4888-bc66-5d97ac44efd0" />
 </p>
 <p>
+<img width="327" height="280" alt="Screenshot 2026-07-25 100841" src="https://github.com/user-attachments/assets/e48465ed-2b1a-428e-a700-87ce3df9de5e" />
+</p>
+<p>
+<img width="562" height="394" alt="Screenshot 2026-07-25 101241" src="https://github.com/user-attachments/assets/d6f068e6-3ffa-4354-b9ed-c574cb2456c0" />
+</p>
+<p>
 Separate administrators, employees, and client systems into distinct containers for improved organization and management, Create a new Organizational Unit named "_CLIENTS" and move client-1 into it.
+</p>
+<br />
+
+<h2></h2>
+
+**3. Set up Remote Desktop for Non-Administrative Users**
+---
+<p>
+
+</p>
+<p>
+Logged in to the **client-1** VM using the domain admin username `mydomain.com\jane_admin`, and password. Once logged in, I right-clicked the Start menu and selected **System** to open Remote Desktop Settings, then enabled Remote Desktop by selecting “Select users that can remotely access this PC”. In the Object names field, I typed "Domain User" and selected **Check Names** to validate. After confirming, I clicked **OK** to grant all domain users remote access.
+
+This configuration allows authorized domain users to remotely connect to the client machine using Remote Desktop Protocol (RDP), enabling centralized and flexible access to the system.
 </p>
 <br />
 
