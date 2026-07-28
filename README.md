@@ -285,7 +285,7 @@ Once logged in to **client-1**, I right-clicked the Start menu and opened **Syst
 <img width="1123" height="433" alt="Screenshot 2026-07-25 095750" src="https://github.com/user-attachments/assets/57c59af5-87fa-4eda-834c-45261f40c138" />
 </p>
 <p>
-On the right-hand side, I navigated to **client-1 (advanced system settings) > Change**, which opened the **System Properties** window.
+On the right-hand side, I navigated to **client-1 (Advanced system settings).
 </p>
 <br />
 
