@@ -385,7 +385,7 @@ Open Remote Desktop Settings.
 <h2></h2>
 
 <p>
-<img width="765" height="632" alt="Screenshot 2026-07-25 101930" src="https://github.com/user-attachments/assets/26333dc3-3a21-4729-b7f6-7e63d25447b0" />
+<img width="765" height="632" alt="Screenshot 2026-07-25 101930" src="https://github.com/user-attachments/assets/a295a25f-8a57-4c85-bd3e-5907df0b60c6" />
 </p>
 <p>
 Enable Remote Desktop by selecting “Select users that can remotely access this PC” Click "Add.
@@ -395,32 +395,94 @@ Enable Remote Desktop by selecting “Select users that can remotely access this
 <h2></h2>
 
 <p>
-
+<img width="337" height="187" alt="Screenshot 2026-07-25 102041" src="https://github.com/user-attachments/assets/e6763576-3dc1-4f9d-9891-3c63ed4ed14d" />
+</p>
+<p>
+<img width="282" height="253" alt="Screenshot 2026-07-25 102048" src="https://github.com/user-attachments/assets/3087899b-3ef8-4d09-94bd-9f1b6a69b506" />
 </p>
 <p>
 In the Object names field, type "Domain User" and select **Check Names** to validate. After confirming, click **OK** to grant all domain users remote access.
 
 This configuration allows authorized domain users to remotely connect to the client machine using Remote Desktop Protocol (RDP), enabling centralized and flexible access to the system.
 </p>
-<br />
-
-<h2></h2>
-
 <p>
-  
-</p>
-<p>
+You can now log in to client-1 using a **non-administrative domain user**.
 
+**Note:** In production environments, this is typically configured using Group Policy.
 </p>
 <br />
 
 <h2></h2>
 
+**4. Create Multiple Users with a Script**
+---
+
 <p>
-  
+<img width="579" height="583" alt="Screenshot 2026-07-25 102419" src="https://github.com/user-attachments/assets/d78d9dce-8029-4219-96d8-495bbd2941f0" />
 </p>
 <p>
+To simulate a real-world scenario, I automated the creation of multiple user accounts, similar to how an IT administrator would onboard new employees from an HR-provided list. The script creates these accounts in bulk and automatically assigns them to the _EMPLOYEES Organizational Unit. Returning to the Domain Controller, I opened **Windows PowerShell ISE** as **Administrator**. Create a new file and paste the provided script (`[script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)`) to generate multiple user accounts. Note that a password is provided within the script (`$PASSWORD_FOR_USERS= "Password1"`) for all accounts.
+</p>
+<br />
 
+<h2></h2>
+
+<p>
+<img width="1138" height="568" alt="Screenshot 2026-07-25 102941" src="https://github.com/user-attachments/assets/927563c7-308f-494c-aba1-370b35ad86c8" />
+</p>
+<p>
+Create a new file.
+<br />
+
+<h2></h2>
+
+<p>
+<img width="1137" height="591" alt="Screenshot 2026-07-25 103006" src="https://github.com/user-attachments/assets/f3d68fd0-c08c-448a-9d15-ed214f9de14c" />
+</p>
+<p>
+Paste the provided script (`[script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)`) to generate multiple user accounts. Note that a password is provided within the script (`$PASSWORD_FOR_USERS= "Password1"`) for all accounts.
+</p>
+<br />
+
+<h2></h2>
+
+<p>
+<img width="1139" height="568" alt="Screenshot 2026-07-25 103140" src="https://github.com/user-attachments/assets/2d83d543-a5d1-42aa-8549-33e1f6913212" />
+</p>
+<p>
+Run the script. Observe the list of accounts being generated, then open `Active Directory Users and Computers (ADUC)` and confirm the new accounts appear in the _EMPLOYEES (OU).
+</p>
+<br />
+
+<h2></h2>
+
+<p>
+<img width="1140" height="593" alt="Screenshot 2026-07-25 103220" src="https://github.com/user-attachments/assets/29e4f4cb-986f-42e1-a420-24172238dfdd" />
+</p>
+<p>
+Observe the list of accounts being generated. Open `Active Directory Users and Computers (ADUC)` and confirm the new accounts appear in the _EMPLOYEES (OU).
+</p>
+<br />
+
+<h2></h2>
+
+<p>
+<img width="562" height="396" alt="Screenshot 2026-07-25 103502" src="https://github.com/user-attachments/assets/d2ea5fd3-5164-4bb6-93ea-751f5e2456a1" />
+</p>
+<p>
+Open `Active Directory Users and Computers (ADUC)` and confirm the new accounts appear in the _EMPLOYEES (OU).
+</p>
+<br />
+
+<h2></h2>
+
+### Test Login
+
+<p>
+
+</p>
+<p>
+After verifying the accounts creation in **Active Directory Users and Computers** under the **_EMPLOYEES** Organizational Unit, I used one of the newly created domain user accounts to authenticate using **Remote Desktop Connection**. Confirm that the account was successfully created and could log in to a domain-joined machine.
 </p>
 <br />
 
