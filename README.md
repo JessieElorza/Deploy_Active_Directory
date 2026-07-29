@@ -505,5 +505,4 @@ Confirm that the accounts were successfully created and could log in to a domain
 
 <h2></h2>
 
-<h2>Purpose</h2>
-This repository documents the deployment of an Active Directory environment in Microsoft Azure using Virtual Machines. The project demonstrates core domain services, including domain controller configuration, user management, and client domain joining.
+This repository documents the deployment of an Active Directory environment in Microsoft Azure using Virtual Machines. This demonstrates core domain services, including domain controller configuration, user management, and client domain joining.
