@@ -355,12 +355,72 @@ Separate administrators, employees, and client systems into distinct containers 
 **3. Set up Remote Desktop for Non-Administrative Users**
 ---
 <p>
+<img width="336" height="559" alt="Screenshot 2026-07-25 101539" src="https://github.com/user-attachments/assets/355186b9-7fe5-4325-b982-3ecafaa6e03e" />
+</p>
+<p>
+Logged in to the **client-1** VM using the domain admin username `mydomain.com\jane_admin`, and password.
+</p>
+<br />
+
+<h2></h2>
+
+<p>
+<img width="150" height="450" alt="Screenshot 2026-07-25 101704" src="https://github.com/user-attachments/assets/798440bd-c00c-44c8-b9e1-3b07ea859693" />
+</p>
+<p>
+Once logged in, right-click the Start menu and select **System**.
+</p>
+<br />
+
+<h2></h2>
+
+<p>
+<img width="767" height="632" alt="Screenshot 2026-07-25 101828" src="https://github.com/user-attachments/assets/7583ed9a-056b-4b35-8dfb-b47836362663" />
+</p>
+<p>
+Open Remote Desktop Settings. 
+</p>
+<br />
+
+<h2></h2>
+
+<p>
+<img width="765" height="632" alt="Screenshot 2026-07-25 101930" src="https://github.com/user-attachments/assets/26333dc3-3a21-4729-b7f6-7e63d25447b0" />
+</p>
+<p>
+Enable Remote Desktop by selecting “Select users that can remotely access this PC” Click "Add.
+</p>
+<br />
+
+<h2></h2>
+
+<p>
 
 </p>
 <p>
-Logged in to the **client-1** VM using the domain admin username `mydomain.com\jane_admin`, and password. Once logged in, I right-clicked the Start menu and selected **System** to open Remote Desktop Settings, then enabled Remote Desktop by selecting “Select users that can remotely access this PC”. In the Object names field, I typed "Domain User" and selected **Check Names** to validate. After confirming, I clicked **OK** to grant all domain users remote access.
+In the Object names field, type "Domain User" and select **Check Names** to validate. After confirming, click **OK** to grant all domain users remote access.
 
 This configuration allows authorized domain users to remotely connect to the client machine using Remote Desktop Protocol (RDP), enabling centralized and flexible access to the system.
+</p>
+<br />
+
+<h2></h2>
+
+<p>
+  
+</p>
+<p>
+
+</p>
+<br />
+
+<h2></h2>
+
+<p>
+  
+</p>
+<p>
+
 </p>
 <br />
 
