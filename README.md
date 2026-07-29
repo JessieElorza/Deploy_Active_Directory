@@ -479,11 +479,31 @@ Open `Active Directory Users and Computers (ADUC)` and confirm the new accounts 
 ### Test Login
 
 <p>
-
+<img width="563" height="396" alt="Screenshot 2026-07-25 103641" src="https://github.com/user-attachments/assets/26cadd73-fe82-4bc4-9911-59dddf409e53" />
 </p>
 <p>
-After verifying the accounts creation in **Active Directory Users and Computers** under the **_EMPLOYEES** Organizational Unit, I used one of the newly created domain user accounts to authenticate using **Remote Desktop Connection**. Confirm that the account was successfully created and could log in to a domain-joined machine.
+After verifying the accounts creation in **Active Directory Users and Computers** under the **_EMPLOYEES** Organizational Unit, use one of the newly created domain user accounts to authenticate using **Remote Desktop Connection**. Logoff of client-1 VM.
 </p>
 <br />
 
 <h2></h2>
+
+Confirm that the accounts were successfully created and could log in to a domain-joined machine.
+<p>
+<img width="333" height="639" alt="Screenshot 2026-07-25 103953" src="https://github.com/user-attachments/assets/064be876-fc96-48eb-bec4-6ad969d1a83d" />
+</p>
+<p>
+<img width="620" height="591" alt="Screenshot 2026-07-25 104127" src="https://github.com/user-attachments/assets/b600ac45-7ca4-474e-be37-9823f4d9e362" />
+</p>
+<p>
+<img width="864" height="457" alt="Screenshot 2026-07-25 104140" src="https://github.com/user-attachments/assets/fffa1e6c-951b-4c01-9a2b-bb4c6a8a3bb3" />
+</p>
+<p>
+
+</p>
+<br />
+
+<h2></h2>
+
+<h2>Purpose</h2>
+This repository documents the deployment of an Active Directory environment in Microsoft Azure using Virtual Machines. The project demonstrates core domain services, including domain controller configuration, user management, and client domain joining.
