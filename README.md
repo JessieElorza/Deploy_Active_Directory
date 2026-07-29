@@ -14,6 +14,7 @@ This repository contains instructions and configurations for deploying an on-pre
 - Remote Desktop
 - Active Directory Domain Services
 - PowerShell
+- RDP
 
 <h2>Operating Systems Used </h2>
 
